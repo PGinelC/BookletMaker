@@ -1,7 +1,8 @@
 body {
     font-family: sans-serif;
     line-height: 1.6;
-    margin: 20px;
+    margin: 0;
+    background-color: #62BBFF;
 }
 .container {
     max-width: 600px;
@@ -27,4 +28,42 @@ button:hover {
 #status {
     margin-top: 15px;
     font-weight: bold;
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+  }
+
+.background-image {
+display: block;
+max-width: 100%;
+height: auto;
+}
+
+.upload-container {
+    position: absolute;
+    top: 24%;    /* 50% from top of image */
+    left: 50%;   /* 50% from left of image */
+    transform: translate(-50%, -50%); /* center the container */
+    border-radius: 5px;
+    border: #ccc 2px solid;
+    padding: 20px;
+}
+
+.overlay-component {
+top: 100px;
+left: 150px;
+}
+
+#imposeBtn {
+top: 160px;
+left: 150px;
+}
+
+#status {
+top: 220px;
+left: 150px;
+color: grey;
 }

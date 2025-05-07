@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF Imposition Tool</title>
+    <title>PDF Booklet Tool</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>PDF Imposition Tool</h1>
-        <p>Upload your PDF file to perform imposition.</p>
+    <div style="text-align: center;">
+        <div class="image-wrapper">
+            <img src="background.png" alt="Background" class="background-image" />
+        
+            <!-- These are the components overlaying the image -->
+            <div class="upload-container">
+                <input type="file" id="pdfFile" accept=".pdf" class="overlay-component" />
+                <button id="imposeBtn">Perform Imposition</button>
+                <div id="status">Please upload a PDF.</div>
+            </div>
 
-        <input type="file" id="pdfFile" accept=".pdf">
-
-        <button id="imposeBtn">Perform Imposition</button>
-
-        <div id="status" style="color: grey;">Please upload a PDF.</div>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/pdf-lib/dist/pdf-lib.min.js"></script>
     <script src="imposition.js" defer></script>
